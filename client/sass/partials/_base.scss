@@ -1,0 +1,37 @@
+// This file must be imported before loading html5-boilerplate
+
+// base
+$line-height: 1.4 !default;
+$font-color: #fff !default;
+
+$link-color: #00e !default;
+$link-hover-color: #06e !default;
+$link-visited-color: #551a8b !default;
+
+$selected-font-color: #fff !default;
+$selected-background-color: #ff5e99 !default;
+
+$invalid-background-color: #f0dddd !default;
+
+
+$magenta: #FF0094;
+$teal: #00AAAD;
+$lime: #8CBE29;
+$brown: #9C5100;
+
+$black: #000000;
+$blue: #19A2DE;
+$green: #319A31;
+$orange: #EF9608;
+$pink: #E671B5;
+$purple: #A500FF;
+$red:#E61400;
+$yellow:#FFC425;
+$experimental-support-for-svg: true;
+@mixin metrobg($color) {
+	background:$color;
+	@include background(linear-gradient(top left,$color 80%, lighten($color, 3)));
+	@include box-shadow(inset 0px 0px 1px 2px rgba(255,255,255, 0.2));
+	background-color:$color;
+
+}

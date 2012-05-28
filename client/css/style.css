@@ -1,0 +1,554 @@
+/* line 17, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../../.rvm/gems/ruby-1.9.3-p125/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/OpenSans-Light.eot");
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.ttf") format("truetype");
+}
+
+/* line 13, ../sass/partials/_fonts.scss */
+body, button {
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url("../fonts/Helvetica.eot");
+}
+
+/* line 17, ../sass/partials/_fonts.scss */
+.helvetica {
+  font-family: Helvetica, serif;
+}
+
+/* line 20, ../sass/partials/_fonts.scss */
+.arial {
+  font-family: Arial;
+}
+
+/* line 7, ../sass/partials/_page.scss */
+body, select, input, textarea {
+  color: white;
+}
+
+/* line 21, ../sass/partials/_page.scss */
+body {
+  background: #180a22;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiMxODBhMjIiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMDBkMmUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(80%, #180a22), color-stop(100%, #200d2e));
+  background: -webkit-linear-gradient(top left, #180a22 80%, #200d2e);
+  background: -moz-linear-gradient(top left, #180a22 80%, #200d2e);
+  background: -o-linear-gradient(top left, #180a22 80%, #200d2e);
+  background: -ms-linear-gradient(top left, #180a22 80%, #200d2e);
+  background: linear-gradient(top left, #180a22 80%, #200d2e);
+  -webkit-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  background-color: #180a22;
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  box-shadow: none;
+}
+/* line 32, ../sass/partials/_page.scss */
+body.correct {
+  background: #319a31;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiMzMTlhMzEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNWE2MzUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(80%, #319a31), color-stop(100%, #35a635));
+  background: -webkit-linear-gradient(top left, #319a31 80%, #35a635);
+  background: -moz-linear-gradient(top left, #319a31 80%, #35a635);
+  background: -o-linear-gradient(top left, #319a31 80%, #35a635);
+  background: -ms-linear-gradient(top left, #319a31 80%, #35a635);
+  background: linear-gradient(top left, #319a31 80%, #35a635);
+  -webkit-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  background-color: #319a31;
+}
+/* line 35, ../sass/partials/_page.scss */
+body.incorrect {
+  background: #e61400;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNlNjE0MDAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNTE1MDAiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(80%, #e61400), color-stop(100%, #f51500));
+  background: -webkit-linear-gradient(top left, #e61400 80%, #f51500);
+  background: -moz-linear-gradient(top left, #e61400 80%, #f51500);
+  background: -o-linear-gradient(top left, #e61400 80%, #f51500);
+  background: -ms-linear-gradient(top left, #e61400 80%, #f51500);
+  background: linear-gradient(top left, #e61400 80%, #f51500);
+  -webkit-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  background-color: #e61400;
+}
+
+/* line 40, ../sass/partials/_page.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 44, ../sass/partials/_page.scss */
+body {
+  padding: 0.5em;
+}
+
+/* line 50, ../sass/partials/_page.scss */
+header {
+  margin-bottom: 1em;
+}
+
+/* line 58, ../sass/partials/_page.scss */
+h1 {
+  font-size: 1.5em;
+  width:60%;
+}
+
+/* line 62, ../sass/partials/_page.scss */
+h2 {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 67, ../sass/partials/_page.scss */
+#mouseFollower {
+  width: 1em;
+  height: 1em;
+  pointer-events: none;
+  display: block;
+  z-index: 99999;
+  background: #ef9608;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+  position: fixed;
+  top: -2em;
+  left: -2em;
+}
+
+.right-hand #mouseFollower {
+  background:#E61400;
+}
+
+.left-hand #mouseFollower {
+  background:#ef9608;
+}
+
+/* line 80, ../sass/partials/_page.scss */
+#webcam {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 200px;
+  background: #000;
+  display:none;
+}
+
+
+
+/* line 88, ../sass/partials/_page.scss */
+#takeSnapshot {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  color: #fff;
+  z-index: 9999;
+}
+
+/* line 1, ../sass/partials/_quiz.scss */
+#details {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  text-align: right;
+}
+/* line 6, ../sass/partials/_quiz.scss */
+#details #questions {
+  font-size: 1em;
+}
+/* line 9, ../sass/partials/_quiz.scss */
+#details #timer {
+  font-size: 2em;
+  margin-bottom: 0.25em;
+}
+
+/* line 17, ../sass/partials/_quiz.scss */
+#options, #start {
+  font-size: 2.1em;
+  width: 6em;
+  margin: 0 auto;
+  position: relative;
+}
+
+#options .letter {
+  font-size:1.5em;
+}
+
+/* line 24, ../sass/partials/_quiz.scss */
+button {
+  display: block;
+  font-weight: normal;
+  background: #19a2de;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiMxOWEyZGUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMGFhZTYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(80%, #19a2de), color-stop(100%, #20aae6));
+  background: -webkit-linear-gradient(top left, #19a2de 80%, #20aae6);
+  background: -moz-linear-gradient(top left, #19a2de 80%, #20aae6);
+  background: -o-linear-gradient(top left, #19a2de 80%, #20aae6);
+  background: -ms-linear-gradient(top left, #19a2de 80%, #20aae6);
+  background: linear-gradient(top left, #19a2de 80%, #20aae6);
+  -webkit-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  background-color: #19a2de;
+  color: white;
+  float: left;
+  width: 2em;
+  font-size: 1em;
+  height: 2em;
+  text-align: left;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+/* line 38, ../sass/partials/_quiz.scss */
+button .bg {
+  position: absolute;
+  background: #ff0094;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNmZjAwOTQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjBmOWEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(80%, #ff0094), color-stop(100%, #ff0f9a));
+  background: -webkit-linear-gradient(top left, #ff0094 80%, #ff0f9a);
+  background: -moz-linear-gradient(top left, #ff0094 80%, #ff0f9a);
+  background: -o-linear-gradient(top left, #ff0094 80%, #ff0f9a);
+  background: -ms-linear-gradient(top left, #ff0094 80%, #ff0f9a);
+  background: linear-gradient(top left, #ff0094 80%, #ff0f9a);
+  -webkit-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  background-color: #ff0094;
+  left: 0;
+  right: 0;
+  top: -100%;
+  height: 100%;
+  z-index: 1;
+}
+/* line 52, ../sass/partials/_quiz.scss */
+button .letter {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 2;
+}
+
+/* line 60, ../sass/partials/_quiz.scss */
+#finish {
+  padding-right: 8em;
+  position: relative;
+}
+/* line 61, ../sass/partials/_quiz.scss */
+#finish h2 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+/* line 67, ../sass/partials/_quiz.scss */
+#finish h3 {
+  margin-bottom: 0.5em;
+}
+/* line 71, ../sass/partials/_quiz.scss */
+#finish h4 {
+  margin-bottom: 0.5em;
+}
+/* line 75, ../sass/partials/_quiz.scss */
+#finish h5 {
+  margin-bottom: 0.5em;
+}
+/* line 79, ../sass/partials/_quiz.scss */
+#finish .avatar {
+  position: absolute;
+  top: 2.5em;
+  right: 0em;
+  width: 7em;
+}
+
+/* line 90, ../sass/partials/_quiz.scss */
+.again {
+  position: absolute;
+  top: -2.5em;
+  right: 0em;
+  width: 7em;
+  background: #00aaad;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiMwMGFhYWQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMGI5YmMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(80%, #00aaad), color-stop(100%, #00b9bc));
+  background: -webkit-linear-gradient(top left, #00aaad 80%, #00b9bc);
+  background: -moz-linear-gradient(top left, #00aaad 80%, #00b9bc);
+  background: -o-linear-gradient(top left, #00aaad 80%, #00b9bc);
+  background: -ms-linear-gradient(top left, #00aaad 80%, #00b9bc);
+  background: linear-gradient(top left, #00aaad 80%, #00b9bc);
+  -webkit-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  background-color: #00aaad;
+}
+/* line 96, ../sass/partials/_quiz.scss */
+.again .bg {
+  background: #319a31;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiMzMTlhMzEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNWE2MzUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(80%, #319a31), color-stop(100%, #35a635));
+  background: -webkit-linear-gradient(top left, #319a31 80%, #35a635);
+  background: -moz-linear-gradient(top left, #319a31 80%, #35a635);
+  background: -o-linear-gradient(top left, #319a31 80%, #35a635);
+  background: -ms-linear-gradient(top left, #319a31 80%, #35a635);
+  background: linear-gradient(top left, #319a31 80%, #35a635);
+  -webkit-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  background-color: #319a31;
+}
+
+/* line 100, ../sass/partials/_quiz.scss */
+#start {
+  background: #319a31;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiMzMTlhMzEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNWE2MzUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(80%, #319a31), color-stop(100%, #35a635));
+  background: -webkit-linear-gradient(top left, #319a31 80%, #35a635);
+  background: -moz-linear-gradient(top left, #319a31 80%, #35a635);
+  background: -o-linear-gradient(top left, #319a31 80%, #35a635);
+  background: -ms-linear-gradient(top left, #319a31 80%, #35a635);
+  background: linear-gradient(top left, #319a31 80%, #35a635);
+  -webkit-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  background-color: #319a31;
+}
+/* line 102, ../sass/partials/_quiz.scss */
+#start .bg {
+  background: #ef9608;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNlZjk2MDgiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmNzllMGYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(80%, #ef9608), color-stop(100%, #f79e0f));
+  background: -webkit-linear-gradient(top left, #ef9608 80%, #f79e0f);
+  background: -moz-linear-gradient(top left, #ef9608 80%, #f79e0f);
+  background: -o-linear-gradient(top left, #ef9608 80%, #f79e0f);
+  background: -ms-linear-gradient(top left, #ef9608 80%, #f79e0f);
+  background: linear-gradient(top left, #ef9608 80%, #f79e0f);
+  -webkit-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  background-color: #ef9608;
+}
+
+/* line 107, ../sass/partials/_quiz.scss */
+#leaderboard {
+  position: absolute;
+  top: 0em;
+  right: 0em;
+  width: 7em;
+  background: #a500ff;
+}
+/* line 113, ../sass/partials/_quiz.scss */
+#leaderboard .bg {
+  background: #ffc425;
+}
+
+/* line 118, ../sass/partials/_quiz.scss */
+#start {
+  float: none;
+}
+
+/* line 125, ../sass/partials/_quiz.scss */
+#option1 {
+  margin-right: 2em;
+}
+
+/* line 3, ../sass/partials/_leaderboard.scss */
+#leaderboard_screen {
+  position: relative;
+}
+/* line 6, ../sass/partials/_leaderboard.scss */
+#leaderboard_screen .wrapper {
+  bottom: 0.5em;
+  position: fixed;
+  left: 0.5em;
+  right: 0.5em;
+  top: 5em;
+  overflow: hidden;
+  *zoom: 1;
+  overflow: scroll;
+}
+/* line 16, ../sass/partials/_leaderboard.scss */
+#leaderboard_screen ol {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8em;
+  -moz-column-width: 6.5em;
+  -webkit-column-width: 6.5em;
+  column-width: 6.5em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
+  column-gap: 1em;
+  height: 9em;
+  -webkit-break-inside: avoid-column;
+  -moz-break-inside: avoid-column;
+  -ms-break-inside: avoid-column;
+  -o-break-inside: avoid-column;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid-column;
+}
+/* line 36, ../sass/partials/_leaderboard.scss */
+#leaderboard_screen li {
+  float: left;
+  display: block;
+  -webkit-break-inside: avoid-column;
+  -moz-break-inside: avoid-column;
+  -ms-break-inside: avoid-column;
+  -o-break-inside: avoid-column;
+  break-inside: avoid-column;
+  -webkit-column-break-inside: avoid;
+  position: relative;
+  list-style: decimal inside;
+  width: 6em;
+}
+/* line 49, ../sass/partials/_leaderboard.scss */
+#leaderboard_screen li .pos {
+  color: #fff;
+  background: #a500ff;
+  background: #a500ff;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNhNTAwZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhYTBmZmYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(80%, #a500ff), color-stop(100%, #aa0fff));
+  background: -webkit-linear-gradient(top left, #a500ff 80%, #aa0fff);
+  background: -moz-linear-gradient(top left, #a500ff 80%, #aa0fff);
+  background: -o-linear-gradient(top left, #a500ff 80%, #aa0fff);
+  background: -ms-linear-gradient(top left, #a500ff 80%, #aa0fff);
+  background: linear-gradient(top left, #a500ff 80%, #aa0fff);
+  -webkit-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  background-color: #a500ff;
+  position: absolute;
+  top: 0;
+  padding: 0.25em;
+  right: 0;
+  z-index: 5;
+}
+/* line 61, ../sass/partials/_leaderboard.scss */
+#leaderboard_screen li button {
+  width: 6em;
+  height: 4em;
+  padding: 0;
+  margin: 0;
+  margin-right: 0.5em;
+  margin-bottom: 0.2em;
+}
+/* line 66, ../sass/partials/_leaderboard.scss */
+#leaderboard_screen li button .avatar {
+  margin-bottom: -0.25em;
+  float: left;
+  width: 100%;
+}
+/* line 72, ../sass/partials/_leaderboard.scss */
+#leaderboard_screen li button .bg {
+  background: #19a2de;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiMxOWEyZGUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMGFhZTYiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(80%, #19a2de), color-stop(100%, #20aae6));
+  background: -webkit-linear-gradient(top left, #19a2de 80%, #20aae6);
+  background: -moz-linear-gradient(top left, #19a2de 80%, #20aae6);
+  background: -o-linear-gradient(top left, #19a2de 80%, #20aae6);
+  background: -ms-linear-gradient(top left, #19a2de 80%, #20aae6);
+  background: linear-gradient(top left, #19a2de 80%, #20aae6);
+  -webkit-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2);
+  background-color: #19a2de;
+  bottom: 0%;
+  -webkit-transition: right 1s linear;
+  -moz-transition: right 1s linear;
+  -ms-transition: right 1s linear;
+  -o-transition: right 1s linear;
+  transition: right 1s linear;
+  right: 100%;
+}
+/* line 81, ../sass/partials/_leaderboard.scss */
+#leaderboard_screen li button:hover .bg, #leaderboard_screen li button.hover .bg {
+  right: 0%;
+  bottom: 0%;
+}
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+}
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+}
+@media print {
+  /* Style adjustments for print go here */
+}

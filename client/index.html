@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="no-js ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class='no-js' lang='en'>
+  <!--<![endif]-->
+  <head>
+    <meta charset='utf-8' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <title></title>
+    <meta content='' name='description' />
+    <meta content='' name='author' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link href='css/style.css' rel='stylesheet' />
+    <script src='js/modernizr-2.0.6.min.js'></script>
+  </head>
+  <body>
+    <div id='container'>
+      <header>
+        <div id='details'>
+          <div id='timer'></div>
+          <div id='questions'></div>
+        </div>
+        <h1>ubelly helvetica quiz</h1>
+      </header>
+      <div id='main' role='main'>
+        <div id='quiz'>
+          <h2>Which is Helvetica?</h2>
+          <button class='option' id='start'>
+            <span class='letter'>
+              start
+            </span>
+          </button>
+          <div class='hide' id='options'>
+            <button class='option helvetica' id='option1'>
+              <span class='letter'>
+                A
+              </span>
+            </button>
+            <button class='option arial' id='option2'>
+              <span class='letter'>
+                W
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class='hide' id='finish'>
+          <button class='again'>
+            <span class='letter'>
+              go again
+            </span>
+          </button>
+          <button class='leaderboard hide' id='leaderboard'>
+            <span class='letter'>
+              leaderboard
+            </span>
+          </button>
+          <h2>GAME OVER</h2>
+          <h3>You scored <span class='score'>0/10</span></h3>
+          <h4>Insert funny statement here</h4>
+          <h5 class='hide'>You current rank is <span class='rank'>26</span></h5>
+          <img class='avatar hide' src='http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg' />
+        </div>
+        <div class='hide'  id='leaderboard_screen'>
+          <button class='again'>
+            <span class='letter'>
+              play game
+            </span>
+          </button>
+          <h2>Leaderboard</h2>
+          <div class='wrapper'>
+            <ol class='auto-flicker'></ol>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id='takeSnapshot' style="display:none;">Take snapshot</div>
+        <div id='webcam'></div>
+        <canvas id='canvas'></canvas>
+        <div id='detectFaces' style="display:none;">Detect faces</div>
+      </footer>
+    </div>
+    <script src='js/jquery.min.js'></script>
+    <script src='js/plugins.js'></script>
+    <script src='js/getUserMedia.js/dist/getUserMedia.min.js'></script>
+    <script src='js/script.js'></script>
+   
+    <!--[if lt IE 7]>
+    <script src='//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js'></script>
+    <script>
+      window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})});
+    </script>
+    <![endif]-->
+  </body>
+</html>

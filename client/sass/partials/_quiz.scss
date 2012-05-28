@@ -1,0 +1,127 @@
+#details {
+	position:absolute;
+	top:0.5em;
+	right:0.5em;
+	
+	#questions {
+		font-size:1em;
+	}
+	#timer {
+		font-size:2em;
+		margin-bottom:0.25em;
+	}
+	text-align:right;
+}
+
+
+#options, #start {
+	font-size:2.1em;
+	width:6em;
+	margin:0 auto;
+	position:relative;
+}
+
+button {
+	display:block;
+	font-weight:normal;
+	@include metrobg($blue);
+	color:white;
+	float:left;
+	width:2em;
+	font-size:1em;
+	height:2em;
+	text-align:left;
+	border:none;
+	position:relative;
+	overflow:hidden;
+
+	.bg {
+		position:absolute;
+		@include metrobg($magenta);
+		left:0;
+		right:0;
+		top:-100%;
+		height:100%;
+		z-index:1;	
+		
+	}
+	&:hover, &.hover {
+		.bg {
+		}
+	}
+	.letter {
+		position:absolute;
+		left:20px;
+		bottom:20px;
+		z-index:2;
+	}
+}
+
+#finish {
+	h2 {
+		font-weight:bold;
+		font-size:1.5em;
+		margin-bottom:0.5em;
+	}
+
+	h3 {
+		margin-bottom:0.5em;
+	}
+
+	h4 {
+		margin-bottom:0.5em;
+	}
+
+	h5 {
+		margin-bottom:0.5em;
+	}
+	padding-right:8em;
+	.avatar {
+		position:absolute;
+		top:2.5em;
+		right:0em;
+		width:7em;
+
+	}
+	position:relative;
+
+}
+
+.again {
+	position:absolute;
+	top:-2.5em;
+	right:0em;
+	width:7em;
+	@include metrobg($teal);
+	.bg {
+		@include metrobg($green);
+	}
+}
+#start {
+	@include metrobg($green);
+	.bg {
+		@include metrobg($orange);
+	}
+}
+
+#leaderboard {
+	position:absolute;
+	top:0em;
+	right:0em;
+	width:7em;
+	background:$purple;
+	.bg {
+		background:$yellow;
+	}
+}
+
+#start {
+	float:none;
+}
+
+
+
+
+#option1 {
+	margin-right:2em;
+}

@@ -1,0 +1,95 @@
+@import "compass/css3";
+
+//-----------------------------------------------
+// The following html5-boilerplate styles should
+// probably be customized for each site
+//-----------------------------------------------
+body, select, input, textarea {
+  color: $font-color;
+  // Set your base font here, to apply evenly
+  // font-family: Georgia, serif;
+}
+
+//-----------------------------------
+// Add your own custom styles below
+//-----------------------------------
+
+body, button {
+  //cursor: url(../img/cursor.png), url(../img/cursor.gif), url(img/cursor.cur), auto;
+}
+
+body {
+	@include metrobg(#180A22);
+	color:#fff;
+	font-size:50px;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	overflow:hidden;
+	box-shadow:none;
+	&.correct {
+		@include metrobg($green);
+	}
+	&.incorrect {
+		@include metrobg($red);
+	}
+}
+
+.hide {
+	display:none !important;
+}
+
+body {
+	padding:0.5em;
+}
+
+#container {}
+
+header {
+	margin-bottom:1em;
+}
+
+#main {}
+
+footer {}
+
+h1 {
+	font-size:1.5em;
+}
+
+h2 {
+	font-size:1em;
+	margin-bottom:1em;
+}
+
+#mouseFollower {
+	width:1em;
+	height:1em;
+	pointer-events:none;
+	display:block;
+	z-index:99999;
+	background:$orange;
+	@include border-radius(1em);
+	position:fixed;
+	top:-2em;
+	left:-2em;
+}
+
+#webcam {
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	width:300px;
+	height:200px;
+	background:#000;
+}
+#takeSnapshot {
+	position:fixed;
+	left:40px;
+	bottom:40px;
+	color:#fff;
+	z-index:9999;
+
+}

@@ -1,0 +1,7 @@
+C:\Users\syd.000\Desktop\testdev\C#\KinectExplorer\Ubelly.Syd\bin\Debug\Ubelly.Syd.dll
+C:\Users\syd.000\Desktop\testdev\C#\KinectExplorer\Ubelly.Syd\bin\Debug\Ubelly.Syd.pdb
+C:\Users\syd.000\Desktop\testdev\C#\KinectExplorer\Ubelly.Syd\obj\Debug\Ubelly.Syd.csprojResolveAssemblyReference.cache
+C:\Users\syd.000\Desktop\testdev\C#\KinectExplorer\Ubelly.Syd\obj\Debug\Ubelly.Syd.dll
+C:\Users\syd.000\Desktop\testdev\C#\KinectExplorer\Ubelly.Syd\obj\Debug\Ubelly.Syd.pdb
+C:\Users\syd.000\Desktop\testdev\C#\KinectExplorer\Ubelly.Syd\bin\Debug\Fleck.dll
+C:\Users\syd.000\Desktop\testdev\C#\KinectExplorer\Ubelly.Syd\bin\Debug\Fleck.pdb

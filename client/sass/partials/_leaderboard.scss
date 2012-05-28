@@ -1,0 +1,92 @@
+@import "compass/css3";
+
+#leaderboard_screen {
+	position:relative;
+
+	.wrapper {
+		bottom:0.5em;
+		position:fixed;
+		left:0.5em;
+		right:0.5em;
+		top:5em;
+		@include clearfix;
+		overflow:scroll;	
+	}
+
+	ol {
+		padding:0;
+		margin:0;
+		font-size:0.8em;
+		-moz-column-width: 6.5em;
+		-webkit-column-width: 6.5em;
+		column-width: 6.5em;
+		-moz-column-gap: 1em;
+		-webkit-column-gap:1em;
+		column-gap: 1em;
+		height:9em;
+		-webkit-break-inside:avoid-column;
+		-moz-break-inside:avoid-column;
+		-ms-break-inside:avoid-column;
+		-o-break-inside:avoid-column;
+		-webkit-column-break-inside:avoid;
+		break-inside:avoid-column;
+		
+
+	}
+	li {
+		float:left;
+		display:block;
+		-webkit-break-inside:avoid-column;
+		-moz-break-inside:avoid-column;
+		-ms-break-inside:avoid-column;
+		-o-break-inside:avoid-column;
+
+		break-inside:avoid-column;
+		-webkit-column-break-inside:avoid;
+
+		position:relative;
+		list-style:decimal inside;
+		.pos {
+			color:#fff;
+			background:$purple;
+			@include metrobg($purple);
+			position:absolute;
+			top:0;
+			padding:0.25em;
+			right:0;
+			z-index:5;
+		}
+		width:6em;
+
+		button {
+			width:6em;
+			height:4em;
+			padding:0;
+			margin:0;
+			.avatar {
+				margin-bottom:-0.25em;
+				float:left;
+				width:100%;
+			}
+
+			.bg {
+				@include metrobg($blue);
+				bottom:0%;
+				@include transition(right 1s linear);	
+
+				right:100%;
+			}
+
+			&:hover, &.hover {
+				.bg {
+					right:0%;
+					bottom:0%;
+				}
+			}
+			margin-right:0.5em;
+			margin-bottom:0.2em;
+
+		}
+	}	
+
+}

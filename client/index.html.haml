@@ -1,0 +1,121 @@
+!!! 5
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+<!--[if lt IE 7]> <html lang="en" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="no-js ie ie9"> <![endif]-->
+-# Consider adding an manifest.appcache: h5bp.com/d/Offline
+<!--[if gt IE 9]><!-->
+%html.no-js{ :lang => "en" }
+  <!--<![endif]-->
+  %head
+    %meta{ :charset => "utf-8" }/
+    
+    -#
+      Use the .htaccess and remove these lines to avoid edge case issues.
+      More info: h5bp.com/b/378
+    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }/
+    
+    %title
+    %meta{ :name => "description", :content => "" }/
+    %meta{ :name => "author", :content => "" }/
+    
+    -# Mobile viewport optimized: j.mp/bplateviewport
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
+    
+    -# Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons
+    
+    -# CSS: implied media="all"
+    -# CSS concatenated and minified via ant build script
+    %link{ :rel => "stylesheet", :href => "css/style.css"}/
+    
+    -# 
+      All JavaScript at the bottom, except for Modernizr / Respond.
+      Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+      For optimal performance, use a custom Modernizr build: www.modernizr.com/download/
+    %script{ :src => "js/modernizr-2.0.6.min.js" }
+    %script{ :src => "http://fast.fonts.com/jsapi/437479d0-39fb-472d-8710-c63067e28e71.js" }
+    
+    
+  %body
+    #container
+      %header
+        #details
+          #timer
+          #questions
+        %h1 ubelly helvetica quiz
+
+      #main{ :role => 'main' }
+        #quiz.hide
+          %h2 Which is Helvetica?
+          %button#start.option
+            %span.letter
+              start
+          #options.hide
+            
+            %button#option1.option.helvetica
+              %span.letter
+                A
+            %button#option2.option.arial
+              %span.letter
+                W
+        #finish.hide
+          %button.again
+            %span.letter
+              go again
+          %button#leaderboard.leaderboard
+            %span.letter
+              leaderboard
+          %h2 GAME OVER
+          %h3 You scored <span class='score'>0/10</span>
+          %h4 Insert funny statement here
+          %h5 You current rank is <span class='rank'>26</span>
+          %img.avatar{ :src => "http://placekitten.com.s3.amazonaws.com/homepage-samples/408/287.jpg" }
+        #leaderboard_screen
+          %button.again
+            %span.letter
+              play game
+          %h2 Leaderboard
+          .wrapper
+            %ol.auto-flicker
+            
+
+
+
+      %footer
+        #takeSnapshot Take snapshot
+        #webcam
+        %canvas#canvas
+        #detectFaces Detect faces
+
+    -# end of #container
+    
+    -# Javascript at the bottom for fast page loading
+    
+    -# jquery
+    %script{ :src => "js/jquery.min.js" }
+    
+    -# scripts concatenated and minified via ant build script
+    %script{ :src => "js/plugins.js" }
+    %script{ :src => "js/getUserMedia.js/dist/getUserMedia.min.js" }
+
+    %script{ :src => "js/script.js" }
+    -# end scripts
+    
+    -#  asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet
+    -#  change the UA-XXXXX-X to be your site's ID
+    %script
+      var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"],["_trackPageLoadTime"]];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g,s)}(document,"script"));
+    
+    -# 
+      Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+      chromium.org/developers/how-tos/chrome-frame-getting-started
+    
+    <!--[if lt IE 7]>
+    %script{ :src => "//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js" }
+    %script
+      window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})});
+    <![endif]-->
