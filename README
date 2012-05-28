@@ -1,1 +1,5 @@
 Only tested on Windows 8, and IE10
+
+Run the server app in Visual Studio and then open up the client in IE10.
+
+If the server app crashes, and gets restarted, the client app needs to be reloaded too.
